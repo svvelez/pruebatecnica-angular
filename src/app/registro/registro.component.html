@@ -1,16 +1,43 @@
-<mat-form-field appearance="fill">
-    <mat-label>Input</mat-label>
-    <input matInput>
-  </mat-form-field>
-  <mat-form-field appearance="fill">
-    <mat-label>Select</mat-label>
-    <mat-select>
-      <mat-option value="one">First option</mat-option>
-      <mat-option value="two">Second option</mat-option>
-    </mat-select>
-  </mat-form-field>
-  <mat-form-field appearance="fill">
-    <mat-label>Textarea</mat-label>
-    <textarea matInput></textarea>
-  </mat-form-field>
+<form novalidate>
+    <div class="row">
+        <div class="col form-group">
+            <label>Name</label>
+            <input type="text" class="form-control">
+        </div>
+        <div class="col form-group">
+            <label>Apellido</label>
+            <input type="email" class="form-control">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col form-group">
+            <label>Celular</label>
+            <input type="text" class="form-control">
+        </div>
+        <div class="col form-group">
+            <label>Correo</label>
+            <input type="email" class="form-control">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col form-group">
+            <label>Contraseña</label>
+            <input type="password" class="form-control">
+        </div>
+        <div class="col form-group">
+            <label>Repetir Contraseña</label>
+            <input type="email" class="form-control">
+        </div>
+    </div>
+      
+    <div class="form-group mt-3">
+      <button class="btn btn-danger btn-block">Registrar</button>
+    </div>
+  </form>
+
+  
+ 
+  
   
