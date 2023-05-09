@@ -8,6 +8,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {MatInputModule} from '@angular/material/input'; 
 import { UsuarioModule } from './usuario/usuario.module';
 import { AuthModule } from './login/auth/auth.module';
+import { RegistroModule } from './registro/registro.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,9 @@ import { AuthModule } from './login/auth/auth.module';
     NgbModule,
     MatInputModule,
     UsuarioModule,
-    AuthModule
+    AuthModule,
+    RegistroModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

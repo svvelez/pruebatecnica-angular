@@ -22,14 +22,45 @@
                         <input type="password" class="form-control mt-2">
                     </div>
 
-                    <div class="col-md-12 d-flex justify-content-center mt-5">
-                        <button type="button" class="btn btn-primary">Login</button>
+                    <div class="col-md-12 d-flex justify-content-center mt-3">
+                        <button type="button" class="btn btn-primary" (click)="login();">Login</button>
+                        
+                    </div>
+
+                    <div class="col-md-12 d-flex justify-content-center mt-2">
+                        <button type="button" class="btn btn-primary" (click)="registrar();">Registrarse</button>
+
                     </div>
 
                 </div>
             </div>
         </div>
 
+    <!-- The Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" (click)="closeModal();"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          
+          <app-registro></app-registro>
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal" (click)="closeModal();">Close</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
 
     </mat-sidenav-content>
 </mat-sidenav-container>
