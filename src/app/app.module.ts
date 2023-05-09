@@ -10,6 +10,7 @@ import { UsuarioModule } from './usuario/usuario.module';
 import { AuthModule } from './login/auth/auth.module';
 import { RegistroModule } from './registro/registro.module';
 
+
 @NgModule({
   declarations: [
     AppComponent
@@ -23,7 +24,7 @@ import { RegistroModule } from './registro/registro.module';
     UsuarioModule,
     AuthModule,
     RegistroModule
-    
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

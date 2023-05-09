@@ -4,4 +4,24 @@
     align-items: flex-start;
   }
 
-  
+  .btn-primary{
+    background: #3BFFE8;
+    background: linear-gradient(45deg, #3BFFE8, #0C41A6);
+    width: 20%;
+    height: 120%;
+    border-radius: 1px solid  #0C41A6;
+    
+    }
+    
+    
+    .btn-primary {
+      transition-duration: 0.4s;
+    }
+    
+    .btn-primary:hover {
+    
+    background: #ABFFF5;
+    background-image: linear-gradient(90deg, #00C0FF 0%, #00ffbf 49%, #4fbcfc 80%, #00C0FF 100%);
+    color: white;
+    
+    }

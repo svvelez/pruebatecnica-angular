@@ -6,6 +6,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import {MatSelectModule} from '@angular/material/select'; 
 import { BrowserModule } from '@angular/platform-browser';
+import { MatIconModule } from '@angular/material/icon';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { BrowserModule } from '@angular/platform-browser';
     FormsModule,
     MatSelectModule,
     BrowserModule,
+    MatIconModule
     
    ],
  exports: [
