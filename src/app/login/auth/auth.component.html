@@ -1,95 +1,104 @@
 <mat-sidenav-container class="example-container">
 
-    <mat-sidenav-content class="example-sidenav-container">
-      <form action="">
-        <div class="col-md-6 offset-md-3">
 
-          <div class="container mat-elevation-z8 justify-content-center">
-             <div class="login-form">
-                <img class="avatar logo mat-elevation-z8 mt-3" src="https://www.playtechla.com/en/wp-content/uploads/2017/10/logo-carga.png" alt="">
-                  
-                <div class="row">
-                  <div class="mt-2 col-25">
-                    <label for="email" class="mt-2 d-flex justify-content-left">
-                        Correo
-                    </label>
-                    </div>
-                    <div class="col-75"> 
-                    <input type="email" class="form-control mt-2" placeholder="usu@gmail.com">
-                     </div>
-                </div>
-               
+  
+  <mat-sidenav-content class="example-sidenav-container">
+    <form action="">
+      <div class="col-md-6 offset-md-3">
 
-                <div class="row">
-                  <div class="mt-2 col-25">
-                      <label for="password" class="mt-2 d-flex justify-content-left">
-                          Contraseña
-                      </label>
-                  </div>
-                  <div class="col-75">    
-                      <input type="password" class="form-control mt-2">
-                  </div>
-                </div>  
-
-                <div class="row">
-                  <div class="col-md-12 d-flex justify-content-center mt-4">
-                    <button type="button" class="btn btn-primary" (click)="login();">Login</button>
-                </div>
-
-                 <div class="col-md-12 d-flex justify-content-center mt-2 my-2">
-                     <button type="button" class="btn btn-primary" (click)="registrar();">Registrarse</button>
-                 </div>
-
-                </div>
+        <div class="container mat-elevation-z8 justify-content-center">
+           <div class="login-form login-container">
+            <div class="text-center">
+              <img src="https://www.playtechla.com/en/wp-content/uploads/2017/10/logo2.png"
+                style="width: 185px;" alt="logo">
+              <h4 class="mt-1 mb-5 pb-1"></h4>
+            </div>
             
-                <div class="social-login">
-                  <a href="#" class="google">
-                  <img class="google logo2" src="data:image/png;base64,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" alt="">
-                  </a>
-                  <a href="#" class="facebook">
-                    <img class="facebook logo2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSPzzGUG4Jieibe8GJrRBMPeAKvQ9t6lrCDA&usqp=CAU" alt="">
-                  </a>
-                  <a href="#" class="twitter">
-                  <img class="twitter logo2" src="https://png.pngtree.com/png-vector/20221018/ourlarge/pngtree-twitter-social-media-round-icon-png-image_6315985.png" alt="">
-                  </a>
+              <div class="row">
+                <div class="mt-2 col-25 input-field form-group">
+                 
+                  <label for="inputField">Correo:</label>
+                  
+                    <input type="email" id="inputField" class="form-control mt-2 " required>
+                    <span class="input-border"></span>
+                  
                   </div>
-                    
-
+                 
               </div>
-          </div>
-      </div>
-      </form>
-     
+             
 
-    <!-- The Modal -->
-<div class="modal" id="myModal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-  
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Modal Heading</h4>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" (click)="closeModal();"></button>
-        </div>
-  
-        <!-- Modal body -->
-        <div class="modal-body">
+              <div class="row">
+                <div class="mt-4 col-25 input-field form-group">
+                  <label for="inputField">Contraseña</label>
+                  <input type="password" id="inputField"  class="form-control mt-2" required>
+                  
+                  <span class="input-border"></span>
+              
+                </div>
+              
+              </div>  
+
+              <div class="row">
+                <div class="col-md-12 d-flex justify-content-center mt-4">
+                  <button type="button" class="btn btn-primary" (click)="login();">Login</button>
+              </div>
+              </div>
           
-          <app-registro></app-registro>
+              <div class="social-login ">
+                <a href="https://www.google.com/" class="google">
+                   <img class="google logo2" src="data:image/png;base64,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" alt="">
+                </a>
+                <a href="https://es-la.facebook.com/" class="facebook">
+                  <img class="facebook logo2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSPzzGUG4Jieibe8GJrRBMPeAKvQ9t6lrCDA&usqp=CAU" alt="">
+                </a>
+                <a href="https://twitter.com/?lang=es" class="twitter">
+                  <img class="twitter logo2" src="https://png.pngtree.com/png-vector/20221018/ourlarge/pngtree-twitter-social-media-round-icon-png-image_6315985.png" alt="">
+                </a>
+              </div>
+
+              <div class="mt-5 flex-col-c p-t-155">
+                <span class="span1 txt1 p-b-17">
+                 ¿No tienes cuenta?
+               </span>
+               <button type="button" class="boton2 btn btn-primary" (click)="registrar();">Registrarse</button>
+
+               </div>
+                  
+
+            </div>
         </div>
-  
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal" (click)="closeModal();">Close</button>
-        </div>
-  
+    </div>
+    </form>
+   
+
+  <!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" (click)="closeModal();"></button>
       </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        
+        <app-registro></app-registro>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal" (click)="closeModal();">Close</button>
+      </div>
+
     </div>
   </div>
+</div>
 
-    </mat-sidenav-content>
+  </mat-sidenav-content>
 </mat-sidenav-container>
-
 
 
 
