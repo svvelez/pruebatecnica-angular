@@ -1,41 +1,67 @@
-<form novalidate>
-    <div class="row">
-        <div class="col form-group">
-            <label>Name</label>
-            <input type="text" class="form-control">
-        </div>
-        <div class="col form-group">
-            <label>Apellido</label>
-            <input type="email" class="form-control">
-        </div>
-    </div>
+<!-- formulario de registro -->
+    <form novalidate>
+        <div class="row">
+            <!-- nombre -->
+            <div class="col form-group">
+                <mat-icon class="icon-nombre">perm_identity</mat-icon>
+                <label class="label-nombre">Name</label>
+                <input type="text" class="form-control" >
+            </div>
+            <!-- nombre -->
 
-    <div class="row">
-        <div class="col form-group">
-            <label>Celular</label>
-            <input type="text" class="form-control">
+            <!-- apellido -->
+            <div class="col form-group">
+                <mat-icon class="icon-nombre">perm_identity</mat-icon>
+                <label class="label-nombre">Apellido</label>
+                <input type="email" class="form-control">
+            </div>
+            <!-- apellido -->
         </div>
-        <div class="col form-group">
-            <label>Correo</label>
-            <input type="email" class="form-control">
-        </div>
-    </div>
 
-    <div class="row">
-        <div class="col form-group">
-            <label>Contraseña</label>
-            <input type="password" class="form-control">
+        <div class="row">
+            <!-- celular -->
+            <div class="col form-group">
+                <mat-icon class="icon-celular"> stay_current_portrait</mat-icon>
+                <label class="label-celular">Celular</label>
+                <input type="text" class="form-control">
+            </div>
+            <!-- celular -->
+
+            <!-- email -->
+            <div class="col form-group">
+                <mat-icon class="icon-email">email</mat-icon>
+                <label class="label-email">Correo</label>
+                <input type="email" class="form-control">
+            </div>
+            <!-- email -->
         </div>
-        <div class="col form-group">
-            <label>Repetir Contraseña</label>
-            <input type="email" class="form-control">
+
+        <div class="row">
+            <!-- contrasena -->
+             <div class="col form-group">
+                <mat-icon class="icon-pass">https</mat-icon>
+                <label class="label-pass">Contraseña</label>
+                <input type="password" class="form-control">
+            </div>
+            <!-- contrasena -->
+
+            <!-- repetir contrasena -->
+            <div class="col form-group">
+                <mat-icon class="icon-pass">https</mat-icon>
+                <label class="label-pass">Repetir Contraseña</label>
+                <input type="password" class="form-control">
+            </div>
+            <!-- repetir contrasena -->
         </div>
-    </div>
       
-    <div class="form-group mt-3">
-      <button class="btn btn-primary btn-block">Guardar</button>
-    </div>
-  </form>
+        <!-- boton de guardar -->
+        <div class="form-group mt-3">
+            <button class="btn btn-primary btn-block">
+               <label for="" class="label-guardar">Guardar</label>
+            </button>
+        </div>
+        <!-- boton de guardar -->
+    </form>
 
   
  
